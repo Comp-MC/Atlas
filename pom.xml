@@ -94,9 +94,9 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>com.keenant</groupId>
-        <artifactId>tabbed</artifactId>
-        <version>1.7-SNAPSHOT</version>
+        <groupId>com.keenant.tabbed</groupId>
+        <artifactId>tabbed-core</artifactId>
+        <version>1.8-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
@@ -116,7 +116,13 @@
       <dependency>
         <groupId>us.myles</groupId>
         <artifactId>viaversion</artifactId>
-        <version>1.3.0</version>
+        <version>3.0.2-SNAPSHOT</version>
+        <exclusions>
+          <exclusion>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord-chat</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.sk89q</groupId>
