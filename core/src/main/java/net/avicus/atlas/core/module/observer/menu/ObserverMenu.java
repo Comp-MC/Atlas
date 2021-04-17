@@ -35,9 +35,10 @@ public final class ObserverMenu extends InventoryMenu {
   public static ItemStack icon(final Player viewer) {
     final ItemStack stack = new ItemStack(Material.TRIPWIRE_HOOK);
     final ItemMeta meta = stack.getItemMeta();
-    meta.setDisplayName(
-        ChatColor.RESET + Translations.MODULE_OBSERVER_MENU_TITLE.with(ChatColor.AQUA)
-            .translate(viewer).toLegacyText());
+//    meta.setDisplayName(
+//        ChatColor.RESET + Translations.MODULE_OBSERVER_MENU_TITLE.with(ChatColor.AQUA)
+//            .translate(viewer).toLegacyText());
+    meta.setDisplayName(ChatColor.AQUA + "Observer Options");
     meta.setLore(Collections.singletonList(ChatColor.BLACK + "observer-menu"));
     stack.setItemMeta(meta);
     return stack;
